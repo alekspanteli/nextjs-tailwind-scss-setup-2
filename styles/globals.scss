@@ -1,0 +1,18 @@
+@use "tailwindcss/base";
+@use "tailwindcss/components";
+@use "tailwindcss/utilities";
+
+@use "abstracts/colors";
+@use "abstracts/font-sizes";
+@use "abstracts/mixins";
+
+body {
+  h1 {
+    background-color: colors.$clr-primary;
+  }
+}
+
+.card {
+  font-size: font-sizes.$fs-400;
+  color: colors.$clr-primary;
+}
