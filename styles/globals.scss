@@ -2,17 +2,21 @@
 @use "tailwindcss/components";
 @use "tailwindcss/utilities";
 
-@use "abstracts/colors";
-@use "abstracts/font-sizes";
-@use "abstracts/mixins";
+@use "abstracts/colors" as *;
+@use "abstracts/font-sizes" as *;
+@use "abstracts/utilitties";
+@use "abstracts/mixins" as *;
 
-body {
-  h1 {
-    background-color: colors.$clr-primary;
-  }
-}
+// body {
+//   h1 {
+//     background-color: colors.$clr-primary;
+//   }
+// }
 
 .card {
-  font-size: font-sizes.$fs-400;
-  color: colors.$clr-primary;
+  // font-size: font-sizes.$fs-400;
+  // color: colors.$clr-primary;
+  font-size: $fs-400;
+  color: $clr-primary;
+  @include decorative-corner()
 }
